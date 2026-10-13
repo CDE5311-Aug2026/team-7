@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "checks": [
+    "One entry button and no credential fields",
+    "Original Figma artwork loads locally",
+    "Click and keyboard entry open the workspace",
+    "Refresh retains entry and saved progress",
+    "Settings return and browser Back show welcome",
+    "Re-entry preserves files and choices",
+    "Desktop and mobile have no horizontal overflow",
+    "No browser errors"
+  ],
+  "errors": []
+}

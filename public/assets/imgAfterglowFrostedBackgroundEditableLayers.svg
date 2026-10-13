@@ -1,0 +1,60 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Afterglow frosted background &#194;&#183; editable layers" clip-path="url(#clip0_0_285)">
+<g id="Soft orchid atmosphere" opacity="0.17" filter="url(#filter0_f_0_285)">
+<ellipse cx="460" cy="140" rx="380" ry="280" fill="#B399E8"/>
+</g>
+<g id="Soft coral atmosphere" opacity="0.13" filter="url(#filter1_f_0_285)">
+<ellipse cx="1260" cy="180" rx="350" ry="250" fill="#FA807F"/>
+</g>
+<g id="Soft periwinkle atmosphere" opacity="0.14" filter="url(#filter2_f_0_285)">
+<ellipse cx="1710" cy="735" rx="340" ry="385" fill="#7885D9"/>
+</g>
+<g id="Soft aqua atmosphere" opacity="0.14" filter="url(#filter3_f_0_285)">
+<ellipse cx="990" cy="925" rx="470" ry="225" fill="#8FCFC6"/>
+</g>
+<g id="Fine frosted grain &#194;&#183; native noise" filter="url(#filter4_n_0_285)">
+<rect width="1920" height="1080" fill="white" fill-opacity="0.14"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_0_285" x="-40" y="-260" width="1000" height="800" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_0_285"/>
+</filter>
+<filter id="filter1_f_0_285" x="790" y="-190" width="940" height="740" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_0_285"/>
+</filter>
+<filter id="filter2_f_0_285" x="1250" y="230" width="920" height="1010" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_0_285"/>
+</filter>
+<filter id="filter3_f_0_285" x="400" y="580" width="1180" height="690" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_0_285"/>
+</filter>
+<filter id="filter4_n_0_285" x="0" y="0" width="1920" height="1080" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="1.5384615659713745 1.5384615659713745" stitchTiles="stitch" numOctaves="3" result="noise" seed="0" />
+<feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+<feComponentTransfer in="alphaNoise" result="coloredNoise1">
+<feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+<feFlood flood-color="rgba(51, 48, 61, 0.045)" result="color1Flood" />
+<feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+<feMerge result="effect1_noise_0_285">
+<feMergeNode in="shape" />
+<feMergeNode in="color1" />
+</feMerge>
+</filter>
+<clipPath id="clip0_0_285">
+<rect width="1920" height="1080" fill="white"/>
+</clipPath>
+</defs>
+</svg>
