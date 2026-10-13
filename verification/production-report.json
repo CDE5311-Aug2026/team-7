@@ -1,0 +1,68 @@
+{
+  "status": "pass",
+  "baseURL": "https://fileo-prototype.vercel.app",
+  "checks": [
+    {
+      "name": "Initial dataset, original Figma assets and local fonts loaded",
+      "status": "pass"
+    },
+    {
+      "name": "Scope chooser changes included folders",
+      "status": "pass"
+    },
+    {
+      "name": "Subfolder toggle changes analysis count from 42 to 8 and back",
+      "status": "pass"
+    },
+    {
+      "name": "Version comparison changes the draft while leaving original files intact",
+      "status": "pass"
+    },
+    {
+      "name": "Confirmation is gated and going back does not apply changes",
+      "status": "pass"
+    },
+    {
+      "name": "Reload preserves draft and current step",
+      "status": "pass"
+    },
+    {
+      "name": "Execution changes paths, shows one failure and retries only the failed operation",
+      "status": "pass"
+    },
+    {
+      "name": "Ctrl K search finds the updated archived path",
+      "status": "pass"
+    },
+    {
+      "name": "Empty results recover through Clear filters",
+      "status": "pass"
+    },
+    {
+      "name": "Restore cancel is harmless; confirm restores the original path and records history",
+      "status": "pass"
+    },
+    {
+      "name": "Assistant shows rule-based evidence and file links",
+      "status": "pass"
+    },
+    {
+      "name": "Reset restores all 42 seed files",
+      "status": "pass"
+    },
+    {
+      "name": "Core flow and assets use only the app origin; no external API needed",
+      "status": "pass"
+    },
+    {
+      "name": "1920, 1280, 768 and 390 px layouts have no document overflow; mobile navigation and assistant work",
+      "status": "pass"
+    },
+    {
+      "name": "No browser console errors or failed asset requests",
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "network": []
+}

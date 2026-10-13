@@ -1,5 +1,9 @@
 # Fileo 本地交互原型
 
+- **在线演示：** https://fileo-prototype.vercel.app
+- **课程仓库：** https://github.com/CDE5311-Aug2026/team-7 （私有，需课程组织访问权限）
+- **线上验证：** `verification/DEPLOYMENT.md`
+
 基于现有 Figma 的莓紫色 Fileo 界面制作，使用 React、TypeScript 和 Vite。四个精修预览、背景和主要图标来自原 Figma；字体与素材已保存到本地。
 
 ## 现在打开
