@@ -50,8 +50,8 @@ AI 助手是预设规则与回答，搜索基于文件名、路径和标签，�
 使用 Node.js 24 LTS 和 pnpm 11.25.0。首次从 GitHub 克隆：
 
 ```sh
-git clone https://github.com/william-Xu-cool/fileo-prototype.git
-cd fileo-prototype
+git clone https://github.com/CDE5311-Aug2026/team-7.git
+cd team-7
 npx --yes pnpm@11.25.0 install --frozen-lockfile
 npm run dev
 npm run build
