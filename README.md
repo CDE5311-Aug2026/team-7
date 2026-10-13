@@ -88,9 +88,23 @@ dist/                   可运行的构建结果
 
 GitHub 仓库只包含源码、锁文件、素材与文档。`dist`、`node_modules`、`.env*`、`.vercel` 和本机 Figma 提取参考均不提交；从仓库首次启动前需要安装依赖并构建。
 
-在 Vercel 导入这个 GitHub 仓库，选择 **Vite**，Root Directory 保持仓库根目录，Node.js 选择 **24.x**。`vercel.json` 固定 pnpm 版本并使用锁文件安装；Build Command 为 `npm run build`，Output Directory 为 `dist`。本项目不需要环境变量、API 密钥或数据库。
+项目使用 **Vite**，Root Directory 为仓库根目录，Node.js 为 **24.x**。`vercel.json` 固定 pnpm 版本并使用锁文件安装；Build Command 为 `npm run build`，Output Directory 为 `dist`。本项目不需要应用环境变量、API 密钥或数据库。
 
-页面使用 `#/welcome` 等 hash 路由，刷新时服务器始终接收根路径，因此不需要额外 SPA 重写规则。生产分支为 `main`；连接 GitHub 后，后续 push 会触发新部署。
+页面使用 `#/welcome` 等 hash 路由，刷新时服务器始终接收根路径，因此不需要额外 SPA 重写规则。GitHub 分支为 `main`。
+
+当前课程仓库 `CDE5311-Aug2026/team-7` 是组织私有仓库，Vercel Hobby 不支持直接连接此类仓库。因此源码保存在课程仓库，线上版本使用 Vercel CLI 从同一提交部署，**GitHub push 不会自动更新网站**。更新流程：
+
+```sh
+npm test
+npm run build
+git add .
+git commit -m "Update Fileo prototype"
+git push origin main
+npx vercel@64.0.2 link --yes --scope j-yo-s-h-i-k --project fileo-prototype
+npx vercel@64.0.2 deploy --prod --scope j-yo-s-h-i-k
+```
+
+Vercel 命令使用已登录且有项目权限的账号。登录信息留在工具的凭据存储中；CLI 生成的 `.env*` 和 `.vercel` 均已排除提交和部署上传。如后续团队已有支持组织私有仓库的 Vercel 计划，可再连接 GitHub 自动部署。
 
 部署成功后，用未登录 Vercel 的浏览器打开生产网址，按上面的演示顺序验证。自动检查可设置 `FILEO_BASE_URL` 为生产网址，再执行 `node scripts/test-browser.mjs`。不同浏览器及本地／线上网址各自保存演示进度，不会互相同步。
 

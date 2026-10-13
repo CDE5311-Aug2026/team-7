@@ -8,3 +8,6 @@ verification/*.png
 !.env.example
 *.log
 design-reference/
+
+.vercel
+.env*
